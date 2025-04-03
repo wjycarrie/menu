@@ -11,19 +11,19 @@ const routes = [
     component: () => import('../views/WhatToEat.vue')
   },
   {
-    path: '/calendar',
-    name: 'Calendar',
-    component: () => import('../views/Calendar.vue')
-  },
-  {
     path: '/menu',
     name: 'Menu',
     component: () => import('../views/Menu.vue')
+  },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    component: () => import('../views/Calendar.vue')
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/menu/'),
   routes
 })
 
